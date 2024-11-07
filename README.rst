@@ -3,14 +3,11 @@ Saturn: Package Manager
 .. image:: https://img.shields.io/badge/Build%20(fedora)-passing-2a7fd5?logo=fedora&logoColor=2a7fd5&style=for-the-badge
    :alt: Build = Passing
    :target: https://github.com/ElisStaaf/saturn
-.. image:: https://img.shields.io/badge/Version-net/1-38c747?style=for-the-badge
+.. image:: https://img.shields.io/badge/Version-1.0.0-38c747?style=for-the-badge
    :alt: Version = NET/1
    :target: https://github.com/ElisStaaf/saturn
 .. image:: https://img.shields.io/badge/Language-C-grey?logo=c&logoColor=white&labelColor=blue&style=for-the-badge
    :alt: Language = C
-   :target: https://github.com/ElisStaaf/saturn
-.. image:: https://img.shields.io/badge/LOC%20(counted%20by%20cloc)-~900-e11e5f?style=for-the-badge
-   :alt: LOC = ~900
    :target: https://github.com/ElisStaaf/saturn
 
 Saturn is what we would call a *package manager*... Y'know, because it manages packages?
