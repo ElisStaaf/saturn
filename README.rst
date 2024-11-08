@@ -18,7 +18,8 @@ explaining how a package manager works.
 
 Requirements
 ------------
-* `gcc`_ (or any other C compiler) 
+* `gcc`_ (or any other C compiler)
+* `libyaml-devel`_
 * `make`_
 * `git`_ or `gh`_
 
@@ -45,3 +46,4 @@ Then build the project:
 .. _`make`: https://www.gnu.org/software/make
 .. _`git`: https://git-scm.com/downloads 
 .. _`gh`: https://github.com/cli/cli#installation
+.. _`libyaml-devel`: https://www.graalvm.org/latest/reference-manual/ruby/InstallingLibYAML/
