@@ -1,7 +1,7 @@
 CC=gcc
 LD=ld
 
-PRGNAME=saturn
+PRGNAME=/usr/bin/saturn
 
 EN_DEBUG ?= 1
 
@@ -44,7 +44,7 @@ CFLAGS += $(WARNINGS)
 LDFLAGS= -lyaml
 
 SRC_DIR	 = ./src
-SRC		 = $(SRC_DIR)/parse_pkglist.c
+SRC		 = $(SRC_DIR)/parser.c
 OBJ		 = $(SRC:.c=.o)
 DEP		 = $(OBJ:.o=.d)
 
@@ -52,12 +52,12 @@ DEP		 = $(OBJ:.o=.d)
 all: $(PRGNAME)
 
 $(PRGNAME): $(OBJ)
-	$(CC) $(CFLAGS) $(LDFLAGS) -o $@ $^
+	$(CC) $(CFLAGS) $(LDFLAGS) -o $(PRGNAME) $^
 
 -include $(DEP)
 
 valgrind: $(PRGNAME)
-	valgrind --leak-check=yes --track-origins=yes --show-reachable=yes --log-file="valgrind.log" ./$(PRGNAME)
+	valgrind --leak-check=yes --track-origins=yes --show-reachable=yes --log-file="valgrind.log" $(PRGNAME)
 
 %.d: %.c
 	@$(CC) $(CFLAGS) $< -MM -MT $(@:.d=.o) >$@
